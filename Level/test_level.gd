@@ -113,5 +113,3 @@ func camera_rotation_for_marker(marker: Marker3D) -> Vector3:
 	if marker == pos1_marker:
 		return Vector3(-10, 0, 0)
 	return Vector3(-65, 0, 0)
-
-

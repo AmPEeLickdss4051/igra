@@ -27,5 +27,3 @@ func _on_visible_on_screen_notifier_3d_screen_exited() -> void:
 func _on_area_3d_body_entered(body: Player) -> void:
 	if body is Player:
 		pass
-
-

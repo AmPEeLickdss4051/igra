@@ -2,7 +2,6 @@ extends CharacterBody3D
 class_name Player
 
 
-
 @onready var body: Node3D = $Body
 @onready var hud: Control = $Hud	
 @onready var reset_combo: Timer = $ResetCombo
@@ -38,8 +37,8 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	var mat := grass.material_override as ShaderMaterial
 	mat.set_shader_parameter(
-        "interracting_object_pos",
-        global_position)
+		"interracting_object_pos",
+		global_position)
 
 
 	var input_dir := Input.get_vector("Left", "Right", "Forward", "Backward")
@@ -127,4 +126,3 @@ func combo_reset() -> void:
 
 func _on_reset_combo_timeout() -> void:
 	combo_reset()
-
