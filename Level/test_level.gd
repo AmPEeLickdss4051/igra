@@ -24,6 +24,7 @@ var inside_game_area: bool = false
 var inside_upgrade_area: bool = false
 var camera_tween = null
 
+
 func _ready() -> void:
 	coin_wait_time = coin_timer.wait_time
 	bomb_wait_time = bomb_timer.wait_time
@@ -113,5 +114,3 @@ func camera_rotation_for_marker(marker: Marker3D) -> Vector3:
 	if marker == pos1_marker:
 		return Vector3(-10, 0, 0)
 	return Vector3(-65, 0, 0)
-
-
